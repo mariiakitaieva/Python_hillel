@@ -8,4 +8,4 @@ seventh_variable = "seven"
 eighth_variable = "eight"
 ninth_variable = "nine"
 tenth_variable = "ten"
-print(first_variable, second_variable, third_variable, fourth_variable, fifth_variable, sixth_variable, seventh_variable, eighth_variable, ninth_variable, tenth_variable)
+print(type(first_variable),":", first_variable,";", type(second_variable),":", second_variable,";", type(third_variable), ":", third_variable,";", type(fourth_variable), ":", fourth_variable,";",type(fifth_variable), ":", fifth_variable, ";", type(sixth_variable), ":", sixth_variable,";",type(seventh_variable), ":", seventh_variable,";", type(eighth_variable),":", eighth_variable,";",type(ninth_variable), ":", ninth_variable,";",type(tenth_variable), ":", tenth_variable, ";")
