@@ -6,6 +6,8 @@
 Друкує ім'я задом наперед'''
 
 username = input("Please, enter your name: ")
-print("Wazzup,", username.strip().capitalize())
+print("Wazzup,", username.strip().title())
+#print("Wazzup,", username.strip().capitalize())
 print(len(username.strip()), "letters in the name")
-print(username.strip().capitalize()[::-1])
+print(username.strip().title()[::-1])
+#print("Wazzup,", username.strip().capitalize()[::-1])
