@@ -11,14 +11,14 @@ print(guess_what)
 
 # 4. Отримай логічні значення для пари аргументів (bool()) та порівняй (==) їх між собою. З'ясуй чому результат саме такий
 # None, 7
-who_knows_1: bool = None == 7 #false
-print(who_knows_1)
+who_knows_first: bool = None == 7 #false
+print(who_knows_first)
 # Пуста строка, вираз 10 - 1
-who_knows_2: bool = () == 10-1 #false
-print(who_knows_2)
+who_knows_second: bool = () == 10-1 #false
+print(who_knows_second)
 # True or False, результат роботи функції print() з будь-яким текстом
-who_knows_3: bool = print("Hello, World") == "Hello, World" #false
-print(who_knows_3)
+who_knows_third: bool = print("Hello, World") == "Hello, World" #false
+print(who_knows_third)
 # Результат роботи функції type() від None, результат функції id() від None
-who_knows_4: bool = type(None) == id(None) #false
-print(who_knows_4)
+who_knows_fourth: bool = type(None) == id(None) #false
+print(who_knows_fourth)
