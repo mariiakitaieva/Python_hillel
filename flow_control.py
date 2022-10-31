@@ -3,10 +3,6 @@
 Користувач може помилитися зі знаком арифметичної дії, у цьому разі вивести сповіщення про некоректний знак
 Гарантовано що операнди будуть типу int, float або комбінацією цих типів
 Калькулятор мусить повернути результат типу int якщо якщо операнди були типу int. Або повернути float, якщо хоч один операнд був float
-За бажанням - проаналізуй операнди та сповісти користувача про:
-Тип операнду
-Скільки порядків має операнд
-Результат порівняння операндів
 '''
 first_operand = input("Enter number: ")
 if "." in first_operand:
@@ -48,3 +44,13 @@ elif _operator == "**":
     print(first_operand**second_operand);
 else:
     print("this else will not happen")
+
+'''
+За бажанням - проаналізуй операнди та сповісти користувача про:
+Тип операнду
+Скільки порядків має операнд
+Результат порівняння операндів'''
+print("first_operand_type:", type(first_operand), "second_operand_type: ", type(second_operand))
+print("first_operand_length:", len(str(int(first_operand))), "second_operand_length:", len(str(int(second_operand))))
+print(bool(type(first_operand) == type(second_operand)))
+
