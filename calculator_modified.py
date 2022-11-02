@@ -41,4 +41,4 @@ while True:
     elif _operator == "**":
         print(first_operand**second_operand);
     else:
-        print("this else will not happen")
+        print("this else will not happen");
