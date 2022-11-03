@@ -17,7 +17,8 @@ for letter in row:
         vowels += letter
     if letter in " ":
         space += str(counter)
-    if letter.isalpha() and letter == letter.capitalize():
+    #if letter.isalpha() and letter == letter.capitalize():
+    if letter.isupper():
         capital += letter
     if row[counter].isdigit() and row[counter+1].isdigit() and row[counter+2].isdigit():
         break
