@@ -6,21 +6,41 @@
 Друкує усі гласні букви з рядка, у прикладі вище це  aAa
 Якщо у рядку буде послідовність з трьох цифр, наприклад ab-c474f g - цикл переривається та друкується повідомлення про цю подію.
  Інакше друкується повідомлення про коректне завершення циклу'''
-letter = str()
+letter = ""
 vowels = ""
 space = ""
 capital = ""
-row = "S f-FaGA a 000 o"
-counter = 0
-for letter in row:
+row = input("enter whatever you want: ") #"S f-FaGA a 00 o 00"
+# counter = 0
+# for letter in row:
+#     if letter in "aAoOuUyYiIeE":
+#         vowels += letter
+#     if letter in " ":
+#         space += str(counter)
+#     #if letter.isalpha() and letter == letter.capitalize():
+#     if letter.isupper():
+#         capital += letter
+#     if row[counter].isdigit() and row[counter+1].isdigit() and row[counter+2].isdigit():
+#         break
+#     counter += 1
+# print(f'vowels = {vowels} \nspace = {space} \ncapital = {capital}')
+'''
+В задании с циклами:
+1.Тебе нужно считать строку через input.
+2.Использовать counter - это хорошо, а вот enumerate - лучше.
+3.В строке 10 индекс пробела просто добавляется, добавь запятые, чтобы можно было понять, что за индексы. Тоже самое для букв в других блоках.
+4.В строке 23 у тебя вылетит ошибка, так как если у тебя длина строки = 10 и counter=10, то срезы +1 и +2 будут пытаться обратиться к несуществующим элементам.
+'''
+for index, letter in enumerate(row):
     if letter in "aAoOuUyYiIeE":
-        vowels += letter
+        vowels += letter+","
     if letter in " ":
-        space += str(counter)
-    #if letter.isalpha() and letter == letter.capitalize():
+        space += str(index)+",";
     if letter.isupper():
-        capital += letter
-    if row[counter].isdigit() and row[counter+1].isdigit() and row[counter+2].isdigit():
-        break
-    counter += 1
+        capital += letter+","
+    try:
+        if row[index].isdigit() and row[index + 1].isdigit() and row[index + 2].isdigit():
+            break
+    except:
+        continue
 print(f'vowels = {vowels} \nspace = {space} \ncapital = {capital}')
