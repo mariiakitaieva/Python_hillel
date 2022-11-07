@@ -40,5 +40,8 @@ while True:
             print(first_operand/second_operand);
     elif _operator == "**":
         print(first_operand**second_operand);
-    else:
-        print("this else will not happen")
+
+'''
+1.Всё выглядит хорошо, только в задании с калькулятором, у тебя блок else вообще не выполняется,
+значит он там не нужен (старайся не добавлять не нужные куски кода), лучше в блоке if сделай continue, чтобы итерация началась заново.
+'''
