@@ -2,7 +2,7 @@
 Використай генератор словника
 Використай вбудовану функцію chr()'''
 ASCII_dict = {element: chr(element) for element in range(32,128)}
-# print(type(ASCII_dict), ASCII_dict)
+print(type(ASCII_dict), ASCII_dict)
 
 '''Реалізувати послідовність операцій яка
 Приймає від користувача строку тільки з літер, без пробілів
