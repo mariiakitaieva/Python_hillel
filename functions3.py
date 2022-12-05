@@ -30,8 +30,15 @@ def cheese(func):
     return wrapper
 
 
-def food(bread):
-    print(bread)
+def bread(func):
+    def wrapper():
+        print("хлiб")
+        func()
+    return wrapper
+
+
+def food():
+    print()
 
 
 #sandwich = bread(ingredients(sandwich))
@@ -40,6 +47,7 @@ def food(bread):
 @tomato
 @meat
 @cheese
-def food(bread = "хлiб"):
-    print(bread)
+@bread
+def food():
+    print()
 food()
