@@ -49,5 +49,5 @@ def food():
 @cheese
 @bread
 def food():
-    print()
+    return None
 food()
